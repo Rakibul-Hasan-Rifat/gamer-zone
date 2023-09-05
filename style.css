@@ -455,6 +455,138 @@ p.copyright {
 }
 
 
+/* ==========================++++++ styles for tablet ++++++========================== */
+
+@media screen and (max-width: 768px){
+    section {
+        padding: 40px 8%
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 24px;
+        flex-direction: column;
+    }
+
+    nav ul li:last-child {
+        margin-top: 15px;
+    }
+
+    #banner_section {
+        flex-direction: column-reverse;
+        background-size: 100%;
+        background-position: bottom;
+    }
+
+    #banner_section .banner_image {
+        width: 100%;
+    }
+
+    #banner_section .banner_text {
+        text-align: center;
+    }
+
+    #banner_section .banner_text p {justify-content: center;}
+
+    #gamer {
+        flex-direction: column;
+    }
+
+    #banner_section .banner_text, #gamer .gamer_section_image, #gamer .gamer_section_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .video_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section_image, .section_text {
+        width: 100%;
+    }
+
+    #instant_play {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    #instant_play .section_text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #instant_play .section_image img:first-child {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #instant_play .section_image img:last-child {
+        width: 42%;
+        left: 0;
+    }
+
+    #online_game {
+        flex-direction: column;
+    }
+
+    #online_game .section_image img:first-child {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+    #online_game .section_image img:last-child {
+        width: 42%;
+        right: 0;
+    }
+    #online_game .section_text {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    #careers {
+        flex-direction: column;
+    }
+
+    #careers h3.section_title,
+    #careers p.section_description {
+        text-align: left;
+    }
+
+    #careers p.section_description {
+        margin: 12px 0;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    #careers .careers_container .career span {
+        font-size: .7rem;
+        font-weight: 400;
+    }
+
+    #careers .section_image img:last-child {
+        position: static;
+    }
+
+    .game_types {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .game_types .individual_game_type {
+        justify-content:center;
+    }
+    .game_types .individual_game_type img {width: 25%;}
+    .game_types .individual_game_type strong {
+        font-size: .7em;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+}
+
+
+
 /* ==========================++++++ styles for phone ++++++========================== */
 @media screen and (max-width: 425px) {
     section {
@@ -547,6 +679,10 @@ p.copyright {
 
     #online_game {
         flex-direction: column-reverse;
+    }
+
+    #online_game .section_text {
+        margin-top: 0;
     }
 
     #online_game .section_image img:first-child {
